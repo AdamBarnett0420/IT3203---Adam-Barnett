@@ -1,0 +1,149 @@
+
+/* IT 3203 Milestone 1 The Evolution of HTTP*/
+
+/* my page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263445;
+    background-color: #f4f7fa;
+}
+
+/* main header and site title */
+header {
+    background-color: #17365d;
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* nav shared by all pages */
+nav {
+    background-color: #244b73;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #416b94;
+    text-decoration: underline;
+}
+
+/* main layout */
+main {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #d7e0e8;
+    border-radius: 8px;
+}
+
+/* headings and links */
+h2 {
+    color: #17365d;
+    border-bottom: 2px solid #d7e0e8;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #244b73;
+}
+
+a {
+    color: #145da0;
+}
+
+a:hover {
+    color: #0b3761;
+}
+
+/* reusable grid for homepage content */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.content-card {
+    padding: 18px;
+    border: 1px solid #d7e0e8;
+    border-radius: 6px;
+    background-color: #f8fafc;
+}
+
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #cbd5df;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e7eef5;
+}
+
+/* images in content area */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* footer */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+/* small-screen adjustment */
+@media (max-width: 650px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        margin: 12px;
+        padding: 16px;
+    }
+
+    nav a {
+        padding: 6px;
+    }
+}
