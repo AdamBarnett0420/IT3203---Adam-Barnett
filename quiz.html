@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Self-Assessment Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- website header -->
+    <header>
+        <h1>HTTP and the Evolution of HTTP</h1>
+        <p>Learn about the Hypertext Transfer Protocol</p>
+    </header>
+
+    <!-- main nav -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="concepts.html">Concepts</a>
+        <a href="history.html">History</a>
+        <a href="http2-3.html">HTTP/2 and HTTP/3</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <!-- main quiz -->
+    <main class="quiz-container">
+
+        <h2>HTTP Self-Assessment Quiz</h2>
+
+        <p>
+            Test your understanding of HTTP and its evolution.
+            You have 10 minutes to complete all 10 questions.
+        </p>
+
+        <!-- quiz timer -->
+        <div class="quiz-timer">
+            Time Remaining: <span id="timer">10:00</span>
+        </div>
+
+        <!-- quiz results -->
+        <div id="results" aria-live="polite"></div>
+
+        <!-- quiz form -->
+        <form id="httpQuiz">
+
+            <!-- questions -->
+             <!-- question 1: fill in the blank -->
+<fieldset class="question-card">
+    <legend>1. What does HTTP stand for?</legend>
+
+    <label for="q1">Your answer:</label>
+    <input type="text" id="q1" name="q1">
+</fieldset>
+
+<!-- question 2: multiple choice -->
+<fieldset class="question-card">
+    <legend>2. What is the main purpose of HTTP?</legend>
+
+    <label>
+        <input type="radio" name="q2" value="A">
+        To transfer information between web clients and servers
+    </label>
+
+    <label>
+        <input type="radio" name="q2" value="B">
+        To create computer hardware
+    </label>
+
+    <label>
+        <input type="radio" name="q2" value="C">
+        To protect a computer from viruses
+    </label>
+
+    <label>
+        <input type="radio" name="q2" value="D">
+        To manage computer memory
+    </label>
+</fieldset>
+
+<!-- question 3: multiple choice -->
+<fieldset class="question-card">
+    <legend>3. Which layer of the TCP/IP model does HTTP operate at?</legend>
+
+    <label>
+        <input type="radio" name="q3" value="A">
+        Network Access
+    </label>
+
+    <label>
+        <input type="radio" name="q3" value="B">
+        Internet
+    </label>
+
+    <label>
+        <input type="radio" name="q3" value="C">
+        Transport
+    </label>
+
+    <label>
+        <input type="radio" name="q3" value="D">
+        Application
+    </label>
+</fieldset>
+
+<!-- question 4: fill in the blank -->
+<fieldset class="question-card">
+    <legend>4. Which HTTP status code means "Not Found"?</legend>
+
+    <label for="q4">Status code:</label>
+    <input type="text" id="q4" name="q4">
+</fieldset>
+
+<!-- question 5: multiple choice -->
+<fieldset class="question-card">
+    <legend>5. What does it mean that HTTP is stateless?</legend>
+
+    <label>
+        <input type="radio" name="q5" value="A">
+        HTTP cannot transfer files
+    </label>
+
+    <label>
+        <input type="radio" name="q5" value="B">
+        Each request is handled independently
+    </label>
+
+    <label>
+        <input type="radio" name="q5" value="C">
+        HTTP only works on wireless networks
+    </label>
+
+    <label>
+        <input type="radio" name="q5" value="D">
+        HTTP automatically saves every user request
+    </label>
+</fieldset>
+
+<!-- question 6: select all that apply -->
+<fieldset class="question-card">
+    <legend>6. Which of the following are HTTP request methods? Select all that apply.</legend>
+
+    <label>
+        <input type="checkbox" name="q6" value="GET">
+        GET
+    </label>
+
+    <label>
+        <input type="checkbox" name="q6" value="POST">
+        POST
+    </label>
+
+    <label>
+        <input type="checkbox" name="q6" value="FTP">
+        FTP
+    </label>
+
+    <label>
+        <input type="checkbox" name="q6" value="PUT">
+        PUT
+    </label>
+</fieldset>
+
+<!-- question 7: multiple choice -->
+<fieldset class="question-card">
+    <legend>7. What is the default port number for HTTP?</legend>
+
+    <label>
+        <input type="radio" name="q7" value="A">
+        21
+    </label>
+
+    <label>
+        <input type="radio" name="q7" value="B">
+        25
+    </label>
+
+    <label>
+        <input type="radio" name="q7" value="C">
+        80
+    </label>
+
+    <label>
+        <input type="radio" name="q7" value="D">
+        443
+    </label>
+</fieldset>
+
+<!-- question 8: multiple choice -->
+<fieldset class="question-card">
+    <legend>8. What security technology does HTTPS use to encrypt communication?</legend>
+
+    <label>
+        <input type="radio" name="q8" value="A">
+        FTP
+    </label>
+
+    <label>
+        <input type="radio" name="q8" value="B">
+        DNS
+    </label>
+
+    <label>
+        <input type="radio" name="q8" value="C">
+        DHCP
+    </label>
+
+    <label>
+        <input type="radio" name="q8" value="D">
+        TLS
+    </label>
+</fieldset>
+
+<!-- question 9: multiple choice -->
+<fieldset class="question-card">
+    <legend>9. What important feature did HTTP/2 introduce?</legend>
+
+    <label>
+        <input type="radio" name="q9" value="A">
+        Multiplexing multiple streams over one connection
+    </label>
+
+    <label>
+        <input type="radio" name="q9" value="B">
+        The ability to browse without the internet
+    </label>
+
+    <label>
+        <input type="radio" name="q9" value="C">
+        The replacement of IP addresses
+    </label>
+
+    <label>
+        <input type="radio" name="q9" value="D">
+        The removal of web servers
+    </label>
+</fieldset>
+
+<!-- question 10: select all that apply -->
+<fieldset class="question-card">
+    <legend>10. Which statements about HTTP/3 are correct? Select all that apply.</legend>
+
+    <label>
+        <input type="checkbox" name="q10" value="A">
+        It uses QUIC as its transport protocol
+    </label>
+
+    <label>
+        <input type="checkbox" name="q10" value="B">
+        QUIC runs over UDP
+    </label>
+
+    <label>
+        <input type="checkbox" name="q10" value="C">
+        It is based on TCP
+    </label>
+
+    <label>
+        <input type="checkbox" name="q10" value="D">
+        QUIC includes TLS 1.3 security
+    </label>
+</fieldset>
+
+            <button type="submit">Submit Quiz</button>
+            <button type="reset" id="resetQuiz">Retake Quiz</button>
+
+        </form>
+
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>
